@@ -3,7 +3,7 @@
 function Footer() {
     return (
       <footer className="footer-container">
-        <p className="footer-text">© 2023 BlackHole Holdings</p>
+        <p className="footer-text">© 2023 Red Hand Syndicate</p>
       </footer>
     );
   }
