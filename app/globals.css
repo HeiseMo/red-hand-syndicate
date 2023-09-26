@@ -19,7 +19,8 @@ a {
 }
 
 a:hover {
-  color: #e5b50a;  /* Gold tone for hover effect */
+  color: #e5b50a;
+  /* Gold tone for hover effect */
 }
 
 /* Header Styles */
@@ -57,7 +58,7 @@ a:hover {
 }
 
 /* About Us section styles */
-.about{
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,6 +66,7 @@ a:hover {
   margin: 60px auto;
   border-radius: 10px;
 }
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -90,13 +92,15 @@ a:hover {
   margin: 20px;
 }
 
-.about-container h2, .about-container p {
+.about-container h2,
+.about-container p {
   margin-bottom: 20px;
 }
 
 .about-container h2 {
   font-size: 28px;
-  color: #e5b50a; /* Gold tone */
+  color: #e5b50a;
+  /* Gold tone */
 }
 
 .about-container p {
@@ -105,7 +109,8 @@ a:hover {
   color: #ccc;
 }
 
-.services, .cards {
+.services,
+.cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -148,7 +153,8 @@ a:hover {
   color: #aaa;
 }
 
-.mining, .ship-building {
+.mining,
+.ship-building {
   background-size: cover;
   background-position: center;
 }
@@ -172,7 +178,8 @@ a:hover {
 .footer-container p {
   margin: 0;
 }
-.recruitment-section{
+
+.recruitment-section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -183,10 +190,12 @@ a:hover {
   padding: 20px;
   border-radius: 10px;
 }
+
 .recruitment-section h2 {
   font-size: 42px;
   margin-bottom: 20px;
 }
+
 .recruitment-details {
   display: flex;
   flex-direction: column;
@@ -196,11 +205,12 @@ a:hover {
   width: 30vw;
   padding: 20px;
 }
+
 .recruitment-details ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:100%;
+  width: 100%;
   text-align: start;
   list-style-type: none;
   padding-left: 0;
@@ -239,6 +249,7 @@ a:hover {
 
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
+
   /* Header */
   .header-container {
     flex-direction: column;
@@ -260,7 +271,9 @@ a:hover {
   }
 
   /* About Us */
-  .about, .about-img, .about-container {
+  .about,
+  .about-img,
+  .about-container {
     padding: 20px;
   }
 
@@ -278,7 +291,9 @@ a:hover {
   }
 
   /* Services */
-  .services, .cards, .service-card {
+  .services,
+  .cards,
+  .service-card {
     flex-direction: column;
   }
 
@@ -295,9 +310,11 @@ a:hover {
   .footer-container {
     padding: 10px 20px;
   }
+
   .recruitment-section {
     width: 80vw;
   }
+
   .recruitment-details ul {
     padding: 8px 16px;
     font-size: 14px;
@@ -317,22 +334,30 @@ a:hover {
 /* Enhancements for a more modern & industrial look */
 body {
   background-color: #1a1a2e;
-  background-image: linear-gradient(315deg, #1a1a2e 0%, #3d3d3d 74%); /* Gives a subtle gradient */
+  background-image: linear-gradient(315deg, #1a1a2e 0%, #3d3d3d 74%);
+  /* Gives a subtle gradient */
 }
 
-.service-card, .footer-container {
-  border: 1px solid rgba(255, 255, 255, 0.1);  /* Adding a subtle border */
+.service-card,
+.footer-container {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* Adding a subtle border */
 }
 
 .service-card:hover {
-  border-color: #e5b50a; /* Gold tone on hover */
+  border-color: #e5b50a;
+  /* Gold tone on hover */
 }
 
-.about-container, .footer-container {
-  overflow: hidden; /* Ensures shadows and borders are well-contained */
+.about-container,
+.footer-container {
+  overflow: hidden;
+  /* Ensures shadows and borders are well-contained */
 }
 
 .service-card img {
-  border-radius: 10px; /* Rounded corners for images */
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  border-radius: 10px;
+  /* Rounded corners for images */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  /* Subtle shadow for depth */
 }
