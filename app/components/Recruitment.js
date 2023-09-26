@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const Recruitment = () => {
+function Recruitment() {
     return (
         <section id="recruitment" className="recruitment-section">
             <h2>Recruitment</h2>
