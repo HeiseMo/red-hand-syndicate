@@ -149,3 +149,32 @@ body {
 .footer-container p {
   margin: 0;
 }
+
+/* ... your existing styles ... */
+
+/* responsive design for mobile devices */
+@media (max-width: 768px) {
+  .service-card p {
+    display: none; /* hide the p tag in cards on screens less than 768px wide */
+  }
+
+  .services {
+    flex-direction: column; /* On mobile devices, cards will stack vertically */
+    gap: 10px;
+  }
+
+  .cards {
+    flex-direction: column; /* Cards will stack vertically */
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .service-card {
+    flex: 0 1 100%; /* Each card will take the full width on mobile */
+    padding: 10px;  /* Slightly less padding for mobile */
+  }
+
+  .service-card h3 {
+    font-size: 20px; /* Smaller heading for mobile */
+  }
+}
