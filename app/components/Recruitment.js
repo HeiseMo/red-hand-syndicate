@@ -17,7 +17,9 @@ function Recruitment() {
             </div>
 
             <div className="apply-button-container">
+                <a href='https://discord.gg/mxxYwMUesQ'>
                 <button className="apply-button">Apply Now</button>
+                </a>
             </div>
         </section>
     );
