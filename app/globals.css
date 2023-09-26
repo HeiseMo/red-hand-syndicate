@@ -61,6 +61,7 @@ body {
   max-width: 300px;
   background-color: #1e1f32;
   border-radius: 10px;
+  padding: 20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 .about-container {
