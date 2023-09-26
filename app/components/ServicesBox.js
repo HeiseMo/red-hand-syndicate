@@ -3,7 +3,7 @@ import React from 'react';
 
 const ServiceBox = () => {
     return (
-        <section className="services">
+        <section id="services" className="services">
             <h2>Services</h2>
             <div className='cards'>
                 <div className="service-card mining">

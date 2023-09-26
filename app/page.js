@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import About from './components/About';
 import ServicesBox from './components/ServicesBox';
+import Recruitment from './components/Recruitment';
 import Footer from './components/Footer';
 
 export default function Home() {
@@ -11,7 +12,10 @@ export default function Home() {
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <About />
 
+        <Recruitment />
+        
         <ServicesBox />
+
       </main>
 
       <Footer />

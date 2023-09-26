@@ -2,14 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* styles.css */
-
+/* Reset & Global Styles */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #0e0f22;
   color: #e5e5e5;
   margin: 0;
   padding: 0;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #e5b50a;  /* Gold tone for hover effect */
 }
 
 /* Header Styles */
@@ -18,11 +28,13 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
-  background-color: #141526;
+  background-color: #1e1f3281;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
+
 .header-links a {
   margin: 10px;
+  transition: color 0.2s;
 }
 
 .logo {
@@ -37,167 +49,193 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .cta-button:hover {
   background-color: #c7d0df;
 }
 
-/* About Styles */
 /* About Us section styles */
 .about{
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 900px;
+  width: 50vw;
   margin: 60px auto;
-  padding: 0 60px;
-}
-.about-img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 300px;
-  background-color: #1e1f32;
+  background-color: #1e1f3281;
   border-radius: 10px;
-  padding: 20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 .about-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 60px 60px;
-  background-color: #1e1f32;
+  padding: 20px;
   border-radius: 10px;
+  align-items: center;
+  max-width: 600px;
+  margin: 60px auto;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
-.main-logo{
+.about-img {
+  max-width: 300px;
+  padding: 20px;
+}
+
+.main-logo {
   border-radius: 30px;
   margin: 20px;
 }
 
+.about-container h2, .about-container p {
+  margin-bottom: 20px;
+}
+
 .about-container h2 {
   font-size: 28px;
-  margin-bottom: 20px;
-  color: #e5b50a; /* Gold tone to fit EVE Echoes theme */
+  color: #e5b50a; /* Gold tone */
 }
 
 .about-container p {
   text-align: start;
   font-size: 16px;
-  margin-bottom: 20px;
-  line-height: 1.6;
-  color: #ccc; /* Lighter gray for better readability against dark background */
+  color: #ccc;
 }
 
-/* ... existing styles ... */
-
-.services {
+.services, .cards {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Spacing between cards */
+  gap: 20px;
   padding: 20px 0;
-  justify-content: space-around; /* Distribute cards evenly */
 }
-.cards{
-  display: flex;
+
+.cards {
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px; /* Spacing between cards */
-  padding: 20px 0;
 }
+
 .services h2 {
   font-size: 42px;
 }
 
 .service-card {
-  flex: 0 1 calc(50% - 20px); /* Makes sure each card takes up roughly half the space minus the gap */
-  background-color: #1a1a2e; /* Dark tone */
+  flex: 0 1 calc(50% - 20px);
+  background-color: #1a1a2e;
   border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-10px); /* Slight upward movement on hover for a dynamic feel */
+  transform: translateY(-10px);
 }
 
 .service-card h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #eee; /* Light text color for contrast */
+  color: #eee;
 }
 
 .service-card p {
   font-size: 18px;
-  background-color: #0e0f22c2;
+  background-color: #1e1f3281;
   border-radius: 20px;
   padding: 5px;
-  color: #aaa; /* Slightly dimmer text for the description */
+  color: #aaa;
+}
+
+.mining, .ship-building {
+  background-size: cover;
+  background-position: center;
 }
 
 .mining {
   background-image: url('/mining.jpg');
-  background-size: cover;
-  background-position: center;
 }
 
 .ship-building {
   background-image: url('/indy.jpg');
-  background-size: cover;
-  background-position: center;
 }
-
 
 /* Footer Styles */
 .footer-container {
-  background-color: #141526;
+  background-color: #1e1f3281;
   color: #aaa;
   padding: 20px 40px;
   text-align: center;
-  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .footer-container p {
   margin: 0;
 }
-
-/* ... your existing styles ... */
-
-/* responsive design for mobile devices */
-@media (max-width: 768px) {
-  .service-card p {
-    display: none; /* hide the p tag in cards on screens less than 768px wide */
-  }
-
-  .services {
-    flex-direction: column; /* On mobile devices, cards will stack vertically */
-    gap: 10px;
-  }
-
-  .cards {
-    flex-direction: column; /* Cards will stack vertically */
-    gap: 30px;
-    padding: 10px 0;
-  }
-
-  .service-card {
-    flex: 0 1 100%; /* Each card will take the full width on mobile */
-    padding: 10px;  /* Slightly less padding for mobile */
-  }
-
-  .service-card h3 {
-    font-size: 20px; /* Smaller heading for mobile */
-  }
+.recruitment-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  background-color: #1e1f3281;
+  padding: 20px;
+  border-radius: 10px;
 }
-/* ... your existing styles ... */
+.recruitment-section h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.recruitment-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: flex-start;
+  width: 30vw;
+  padding: 20px;
+}
+.recruitment-details ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  text-align: start;
+  list-style-type: none;
+  padding-left: 0;
+  color: #ccc;
 
+}
+
+.recruitment-details li {
+  display: flex;
+  text-align: flex-start;
+  justify-content: center;
+  list-style-type: none;
+  padding: 5px 0;
+  position: relative;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.apply-button {
+  padding: 10px 20px;
+  background-color: #4287f594;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.apply-button:hover {
+  background-color: #c7d0df;
+}
+
+/* Responsive design for mobile devices */
 @media (max-width: 768px) {
   /* Header */
   .header-container {
@@ -211,24 +249,22 @@ body {
 
   .header-links a {
     margin: 5px;
-    font-size: 14px; /* Reduce font size for better fit */
+    font-size: 14px;
   }
 
   .cta-button {
     padding: 8px 16px;
-    margin-top: 10px; /* Add some space between links and button */
+    margin-top: 10px;
   }
 
   /* About Us */
-  .about {
-    padding: 0 20px;
-    margin: 40px auto;
+  .about, .about-img, .about-container {
+    padding: 20px;
   }
-  .about-img {
-    padding: 10px;
-  }
-  .about-container {
-    padding: 40px 20px;
+
+  .main-logo {
+    max-width: 220px;
+    margin: 10px;
   }
 
   .about-container h2 {
@@ -239,9 +275,18 @@ body {
     font-size: 14px;
   }
 
-  .main-logo {
-    max-width: 220px; /* Reduce logo size for mobile */
-    margin: 10px;
+  /* Services */
+  .services, .cards, .service-card {
+    flex-direction: column;
+  }
+
+  .service-card {
+    flex: 0 1 100%;
+    padding: 10px;
+  }
+
+  .service-card h3 {
+    font-size: 20px;
   }
 
   /* Footer */
@@ -249,7 +294,39 @@ body {
     padding: 10px 20px;
   }
 
-  /* Services - Already handled in your existing styles */
+  .recruitment-details ul {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
 
-  /*... your other mobile optimizations ... */
+  .recruitment-details li {
+    padding: 4px 0;
+  }
+
+  .apply-button {
+    padding: 8px 16px;
+  }
+}
+
+/* Enhancements for a more modern & industrial look */
+body {
+  background-color: #1a1a2e;
+  background-image: linear-gradient(315deg, #1a1a2e 0%, #3d3d3d 74%); /* Gives a subtle gradient */
+}
+
+.service-card, .footer-container {
+  border: 1px solid rgba(255, 255, 255, 0.1);  /* Adding a subtle border */
+}
+
+.service-card:hover {
+  border-color: #e5b50a; /* Gold tone on hover */
+}
+
+.about-container, .footer-container {
+  overflow: hidden; /* Ensures shadows and borders are well-contained */
+}
+
+.service-card img {
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }

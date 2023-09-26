@@ -7,7 +7,7 @@ function Header() {
         <div className="header-links">
         <a href="your-discord-link" className="header-discord-link">About</a>
         <a href="your-discord-link" className="header-discord-link">Recruitment</a>
-        <a href="your-discord-link" className="header-discord-link">Services</a>
+        <a href="#services" className="header-discord-link">Services</a>
         </div>
       </header>
     );
