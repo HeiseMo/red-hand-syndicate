@@ -46,13 +46,30 @@ body {
 
 /* About Styles */
 /* About Us section styles */
-.about-container {
+.about{
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 900px;
   margin: 60px auto;
   padding: 0 60px;
+}
+.about-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  background-color: #1e1f32;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 60px 60px;
   background-color: #1e1f32;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -165,7 +182,7 @@ body {
 
   .cards {
     flex-direction: column; /* Cards will stack vertically */
-    gap: 10px;
+    gap: 30px;
     padding: 10px 0;
   }
 
@@ -177,4 +194,61 @@ body {
   .service-card h3 {
     font-size: 20px; /* Smaller heading for mobile */
   }
+}
+/* ... your existing styles ... */
+
+@media (max-width: 768px) {
+  /* Header */
+  .header-container {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    max-height: 40px;
+  }
+
+  .header-links a {
+    margin: 5px;
+    font-size: 14px; /* Reduce font size for better fit */
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+    margin-top: 10px; /* Add some space between links and button */
+  }
+
+  /* About Us */
+  .about {
+    padding: 0 20px;
+    margin: 40px auto;
+  }
+  .about-img {
+    padding: 10px;
+  }
+  .about-container {
+    padding: 40px 20px;
+  }
+
+  .about-container h2 {
+    font-size: 24px;
+  }
+
+  .about-container p {
+    font-size: 14px;
+  }
+
+  .main-logo {
+    max-width: 220px; /* Reduce logo size for mobile */
+    margin: 10px;
+  }
+
+  /* Footer */
+  .footer-container {
+    padding: 10px 20px;
+  }
+
+  /* Services - Already handled in your existing styles */
+
+  /*... your other mobile optimizations ... */
 }
